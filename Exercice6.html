@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Exercice 6</title>
+  </head>
+  <body>
+      <img src="images/image1.jpg" onmouseover="imgswitch('image1')" onmouseout="imgswitchch('image1')" id="image1" />
+      <img src="images/image2.jpg" onmouseover="imgswitch('image2')" onmouseout="imgswitchch('image2')" id="image2" />
+      <img src="images/image3.jpg" onmouseover="imgswitch('image3')" onmouseout="imgswitchch('image3')" id="image3" />
+      <img src="images/image4.jpg" onmouseover="imgswitch('image4')" onmouseout="imgswitchch('image4')" id="image4" />
+      <img src="images/image5.jpg" onmouseover="imgswitch('image5')" onmouseout="imgswitchch('image5')" id="image5" />
+      <script>
+      function imgswitch(x){
+        var link ="images/" + x + "_2.jpg"
+      document.getElementById(x).src = link;
+    }
+    function imgswitchch(x){
+      var link = "images/" + x + ".jpg";
+      document.getElementById(x).src = link;
+    }
+      </script>
+  </body>
+</html>
